@@ -14,7 +14,7 @@ import com.devsuperior.dsmovie.services.MovieService;
 @RestController
 @RequestMapping(value = "/movies")
 public class MovieController {
-
+	
 	@Autowired
 	private MovieService service;
 	
@@ -27,5 +27,5 @@ public class MovieController {
 	public MovieDTO findById(@PathVariable Long id) {
 		return service.FindById(id);
 	}
-	
+
 }
